@@ -33,3 +33,15 @@ When <circumstance>, $actor wants to <motivation> so that they <goal>
    "purchase now" button **so that** they can finalize the purchase and
    eventually receive the items purchased.
 
+### Actions:
+
+1. Add item to cart
+  - Inputs: customer_id, product_id, product_customizations
+  - Response: guid of the item in the cart
+  - Expected result: product with indicated customizations (e.g. color) added
+  to the cart
+1. Remove item from cart
+  - Inputs: customer_id, guid of the item in the cart
+  - Response: success or error
+  - Expected result: product removed from the cart
+  
