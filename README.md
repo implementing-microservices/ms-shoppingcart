@@ -45,6 +45,6 @@ When <circumstance>, $actor wants to <motivation> so that they <goal>
 1. Remove item from cart
     - Inputs: 
         - `customer_id` or `cart_id` (we are assuming a customer only has one cart at any given time, across any device/session).
-        - `carti_item_id` - guid of the item in the cart
+        - `cart_item_id` - guid of the item in the cart
     - Response: success or error
     - Expected result: product removed from the cart
