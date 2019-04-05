@@ -37,10 +37,14 @@ When <circumstance>, $actor wants to <motivation> so that they <goal>
 
 1. Add item to cart
     - Inputs: customer_id, product_id, product_customizations
-    - Response: guid of the item in the cart
+    - Response: 
+        - `cart_id` - guid of the cart
+        - `cart_item_id` - guid of the item in the cart
     - Expected result: product with indicated customizations (e.g. color) added
   to the cart
 1. Remove item from cart
-    - Inputs: customer_id, guid of the item in the cart
+    - Inputs: 
+        - `customer_id` or `cart_id` (we are assuming a customer only has one cart at any given time, across any device/session).
+        - `carti_item_id` - guid of the item in the cart
     - Response: success or error
     - Expected result: product removed from the cart
